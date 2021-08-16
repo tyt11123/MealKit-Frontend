@@ -1,0 +1,39 @@
+.member_payment_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 5%;
+    max-width: -webkit-fill-available;
+    min-width: auto;
+    font-family: "Helvetica";
+}
+
+.member_payment_card {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(87, 64, 64, 0.125);
+    border-radius: .25rem;
+    margin: 1rem;
+}
+
+.member_payment_card-body {
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.member_payment_card-body .member_payment_card-body_children {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.member_payment_card-body button {
+    align-items: center;
+}

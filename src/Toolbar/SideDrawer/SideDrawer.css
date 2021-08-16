@@ -1,0 +1,135 @@
+.side-drawer {
+  height: 100%;
+  background: #fff8e1;
+  /* color: white; */
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 80rem;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+.side-drawer.close {
+  transform: translateX(-100%);
+}
+.drawer_userDiv {
+  /* height: 12%; */
+  min-height: 23.1rem;
+  margin: 5.1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.drawer_greeting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.changeLanguages {
+  font-family: "Helvetica";
+}
+.drawer_userIcon {
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica";
+  text-decoration: none;
+}
+div .drawer_userIcon > .drawer_logout {
+  width: 9rem;
+  height: 4rem;
+  color: #31525b;
+  background-color: #ffa101;
+  font-weight: bold;
+  margin-top: 0rem;
+  left: -0%;
+  position: relative;
+  text-align: center;
+  border-radius: 0.5rem;
+  align-self: center;
+  align-items: center;
+  align-content: end;
+  display: inline-grid;
+}
+.drawer_logout .text-signIn {
+  text-decoration: none;
+}
+div .drawer_userIcon > a:hover,
+div .drawer_userIcon > a:active,
+div .drawer_logout:active,
+div .drawer_logout:hover {
+  text-decoration: none;
+}
+.drawer_Img {
+  width: 10rem;
+}
+.side-drawer > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 6rem 0;
+}
+
+.side-drawer > li,
+.side-drawer > ul > .sideDrawer_link {
+  font-weight: 900;
+  padding: 0.5rem 0;
+  max-width: inherit;
+  display: flex;
+  justify-content: flex-start;
+  /* border-top: .1rem solid black; */
+  color: #fae6b1;
+  background-color: #31525b;
+  border-bottom: 0.1rem solid #b3dee5;
+}
+
+.side-drawer > ul > .sideDrawer_link:hover,
+.side-drawer > ul > .sideDrawer_link:active {
+  color: #31525b;
+  background-color: #fae6b1;
+  border-bottom: 0.1rem solid #7d8e95;
+}
+.side-drawer a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.sideDrawer_link > li {
+  display: inline-flex;
+}
+.drawer_Icon_Link {
+  width: 2.5rem;
+  margin: 0 1rem;
+}
+.sideDrawer_link li > p {
+  margin: 0 1rem;
+}
+.side-drawer a:hover,
+.side-drawer a:active {
+  text-decoration: none;
+}
+.side-drawer .child-content li a {
+  padding: 1rem;
+  margin: 0.1rem;
+}
+.sideBar_Home {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .side-drawer {
+    display: none;
+  }
+}

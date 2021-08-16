@@ -1,0 +1,250 @@
+.toolbar {
+  height: 6.45rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #E7EDF3;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+.toolbar_admin {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+.toolbar__nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  /* padding: 0 1rem; */
+  /* color: #ffa101; */
+  max-height: 8.5rem;
+}
+
+.toolbar__Logo {
+  width: 9.5rem;
+  margin-left: 2.5rem;
+}
+.toolbar__Logo:active,
+.toolbar__Logo:hover {
+  background-color: white;
+  border-radius: 0.2rem;
+}
+.toolbar__logo span {
+  /* color: #ff8000; */
+}
+.toolbar__logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -3.9px;
+  display: -webkit-box;
+}
+.toolbar__logo p {
+  font-size: 30px;
+  margin-top: 25px;
+}
+.spacer-01 {
+  /* flex: 1 1; */
+}
+.spacer {
+  flex: 1;
+}
+.toolbar_nav-items {
+  align-self: center;
+  min-width: 50rem;
+}
+.toolbar_nav-items .toolbar_nav-items_links {
+  list-style: none;
+  margin: 0 2rem 0 1.5rem;
+  padding: 0;
+  display: flex;
+
+}
+.toolbar_nav-items > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toolbar_nav-items a {
+  color: #ffa101;
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin: 0 .5rem;
+  font-weight: 900;
+}
+.toolbar__logo a:hover,
+.toolbar__logo a:active,
+.toolbar_nav-items a:hover,
+.toolbar_nav-items a:active {
+  color: black;
+  text-decoration: none;
+}
+.toolbar_nav-item {
+  align-self: flex-end;
+  min-width: 10rem;
+}
+.toolbar_nav-item > a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  justify-content: center;
+  display: flex;
+}
+.btn-warning:active,
+.btn-warning:hover {
+  color: black;
+}
+
+.footerLink_abt1:active,
+.footerLink_abt1:hover {
+  background-color: inherit;
+}
+.time {
+  background-color: #f36127;
+  height: 2.9rem;
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* second navbar */
+header > .nav2 {
+  height: 6rem;
+  margin: 1rem;
+  align-items: flex-end;
+  font-family: "Helvetica";
+}
+
+.mobile_nav {
+  display: inline-flex;
+}
+.mobile_btn {
+  /* flex: 1; */
+}
+
+.cart_btn {
+  width: 32rem;
+  height: 6rem;
+  /* margin: 0rem 2rem 0 2rem; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fd7e14;
+}
+.cart_btn:hover,
+.cart_btn:active,
+.drawer_Icon_Link:hover,
+.drawer_Icon_Link:active {
+  background: #7d8e95;
+  color: white;
+  text-decoration: none;
+}
+.cart_btn > h5 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 800;
+}
+.cart_btn_img {
+  width: 3.2rem;
+}
+@media all and (min-width: 769px) {
+  .spacer {
+    /* display: none;
+    flex: 0; */
+  }
+}
+@media (max-width: 768px) {
+  .nav2 {
+    height: 9rem;
+    margin: 1rem;
+    position: fixed;
+    left: -10px;
+    bottom: -10px;
+    background-color: white;
+    width: 100%;
+  }
+  .toolbar_nav-items {
+    display: none;
+  }
+  .cart_btn {
+    width: 32rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart_btn > p {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 800;
+  }
+  .cart_btn_img {
+    width: 3.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav2 {
+    display: none;
+  }
+  .toolbar__toggle-button {
+    display: none;
+  }
+  .toolbar__logo {
+    margin-left: 0;
+  }
+}
+
+/* below mobile btn width in different screen size */
+@media all and (max-width: 689px) {
+  .cart_btn {
+    width: 29rem;
+  }
+}
+@media all and (max-width: 630px) {
+  .cart_btn {
+    width: 25rem;
+  }
+}
+@media all and (max-width: 568px) {
+  .cart_btn {
+    width: 20rem;
+  }
+}
+@media all and (max-width: 493px) {
+  .cart_btn {
+    width: 18rem;
+  }
+}
+@media all and (max-width: 455px) {
+  .cart_btn {
+    width: 15rem;
+  }
+}
+@media all and (max-width: 413px) {
+  .cart_btn > p {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  .cart_btn_img {
+    width: 3rem;
+  }
+}
+@media all and (max-width: 375px) {
+  .cart_btn {
+    width: 13rem;
+  }
+}

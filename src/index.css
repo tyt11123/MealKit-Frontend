@@ -1,0 +1,440 @@
+html {
+  font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+  min-width: 375px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Helvetica",-apple-system, BlinkMacSystemFont; */
+}
+html > body {
+  /* background-color: #fafafa; */
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  font-family: FuturaBT-MediumCondensed;
+  /* font-family: "Helvetica"; */
+  /* font-size: normal;
+  font-weight: normal; */
+}
+
+/* Error_div apply to div of Loading.  */
+.Error_div {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  justify-content: center;
+  margin: 5rem;
+}
+/* when loading below icon will spinning */
+.spinning_icon {
+  -webkit-animation: rotation 0.5s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+/* end of icon rotate */
+button {
+  font-size: 1.6rem;
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979ff;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+  color: #ffffff;
+}
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Reviews */
+ul.review {
+  list-style-type: none;
+  padding: 0;
+}
+.review li {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+.review li > div {
+  margin: 0.5rem;
+}
+
+/* Rating */
+.rating span {
+  color: #ffb901;
+  font-size: 1.8rem;
+  margin: 0.1rem;
+}
+.rating span:last-child {
+  color: #444444;
+  font-size: 1.4rem;
+}
+a > .rating > span:last-child {
+  color: #0000ff;
+}
+
+/* Code below use in  CartScreen.js ,
+PlaceOrderScreen.js,
+OrderScreen.js*/
+
+.productPicked__div {
+  margin: 50px 0;
+}
+.productPicked__div ul {
+  margin: 0;
+  padding: 0 20px;
+}
+.cart-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card {
+  z-index: 0;
+}
+.cart-list-container .card {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  height: auto;
+  border: 1px solid #f0f0f0;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.35);
+}
+.card-title {
+  font-size: 2rem;
+  margin: 0 0 0 0;
+}
+div .cartDetail_choices {
+  font-size: 2rem;
+  padding: 0;
+}
+.cartDetail_choices button {
+  margin-top: 1.5rem;
+  font-size: 1.9rem;
+}
+.card .img-thumbnail {
+  border: none;
+}
+.cart-price {
+  flex: 1 1;
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+/* end of CartScreen.js */
+
+/* start of PaymentScreen.js 
+*/
+
+/*forms -- payment form */
+div .form {
+  border-top: none;
+}
+.form {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 1rem;
+  height: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  list-style: none;
+}
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+input {
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+
+/* start ProductionScreen.js */
+/* content-margined also work in OrderScreen.js */
+.content-margined {
+  margin: 11.2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}
+
+.product-header {
+  width: inherit;
+  margin: 0 20px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.product-header h3,
+.product-header button {
+  margin: 0 0 50px 0;
+}
+.product-header .btn {
+  background-color: #ff8000;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.65);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  margin: 50px 0;
+}
+.product-header .btn:active,
+.product-header .btn:hover {
+  background-color: #113067;
+  color: #ffffff;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.35);
+}
+.CreateProduct_form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  border-top: none;
+}
+
+/* ProductsScreen.js start from class: product-list_div__Content */
+.table {
+  /* width: initial; */
+  font-size: 1.7rem;
+  overflow-x: scroll;
+}
+th {
+  text-align: left;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+td button {
+  margin: 10px 0;
+}
+.product-list_div__Content {
+  overflow-x: auto;
+};
+/* end of ProductsScreen.js 
+I guess...
+ */
+
+/*start from checkoutsteps.js  */
+.payment_outta {
+  margin: 8rem 0 0 0;
+  font-family: "Helvetica";
+}
+.checkout-steps {
+  display: flex;
+  width: 70%;
+  margin: 1rem auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.checkout-steps > div {
+  border-bottom: 0.3rem #bcbcbc dashed;
+  color: #bcbcbc;
+  flex: 1 1;
+  padding-top: 1rem;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.3rem #ef6c00 solid;
+  color: #ef6c00;
+}
+/*end of checkoutsteps.js  */
+
+/* start of OrderScreen.js */
+
+/* .productPicked__div .orderScreen_ShoppingcartDiv {
+  margin: 10px;
+} */
+.placeorder-action h5 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* start PlaceOrderScreen.js 
+from .placeorder
+*/
+
+/* Start ProfileScreen.js
+ */
+.profile {
+  margin: 11.2rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-info {
+  flex: 1 1 30rem;
+}
+.profile-orders {
+  flex: 3 1 60rem;
+}
+
+/* admin */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  padding: 1rem;
+  list-style: null;
+  z-index: 1;
+  margin: 0;
+  margin-top: 0.4rem;
+  width: 100%;
+  background: #fafbfc;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.categories {
+  padding: 0;
+
+  display: flex;
+  list-style: none;
+}
+
+.categories a:hover {
+  background-color: #c0c0c0;
+  padding: 1rem;
+}
+
+/* verify phone */
+.forgot_verify-phone,
+.verify-sms {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 18rem auto;
+}
+
+.verify-phone,
+.verify-sms {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 18rem auto;
+}
+/* shipping */
+.shipping_address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.shipping {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* start OrderScreen.js */
+.order-header h3 {
+  font-size: 3rem;
+}
+div .order_btn__main {
+  background-color: #f36127;
+}
+
+td > .order_btn__secondary {
+  background-color:white;
+  border: 0rem ;
+  color: #000000;
+}
+td > .order_btn__secondary:hover, td > .order_btn__secondary:active {
+  background-color: black;
+  color: white;
+}
+
+/* register screen */
+.register-screen {
+  margin: 11.1rem 0;
+  font-family: "Helvetica";
+}
+.signin-screen {
+  margin: 98px 0;
+  font-family: "Helvetica";
+}
+ul > li > .signInBtn {
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+ul > li > .signInBtn:active,
+ul > li > .signInBtn:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+/* Coupon Admin Screen */
+.CreateCoupon_form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  border-top: none;
+}
+.coupon-list_div__Content {
+  width: inherit;
+  margin: 0 20px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.coupon-list_li input {
+  width: 100%;
+}
+/* Orders Screen */
+.order-list {
+  overflow-x: auto;
+}

@@ -1,0 +1,25 @@
+.show_RecipCard_outtaBox{
+    display: flex;
+    margin: 0 3rem 5rem 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+ flex-direction: row;
+}
+
+.recipeCard__outtaBox{
+    width: 18rem;
+    margin: 1rem 1rem;
+    cursor: pointer !important;
+}
+.recipeCard__outtaBox:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+@media all and (max-width: 599px){
+    .show_RecipCard_outtaBox{
+        margin: 0;
+    }
+    .recipeCard__outtaBox{
+        width: 15rem;
+        margin: .5rem .5rem;
+    }
+}

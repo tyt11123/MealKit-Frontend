@@ -1,0 +1,289 @@
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 5%;
+  max-width: -webkit-fill-available;
+  min-width: auto;
+  font-family: "Helvetica";
+}
+.signInform {
+  border: 1px solid #ededed;
+  background-color: white;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 1rem;
+}
+div > .formDiv > .signInform > .button,
+div > .formDiv > .signInform > p {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: unset;
+  margin: 0;
+  font-size: 1.5rem;
+  
+}
+.myCart_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: -webkit-fill-available;
+  min-width: auto;
+  /* background-color: #f8f8fa; */
+  margin: 2rem 0;
+}
+.myCart_orders,
+div > .myCart_orders > .myCart_cardDiv {
+  display: inherit;
+  flex-direction: flex-start;
+  width: 100%;
+}
+/* whole dic for customer's order */
+div > .myCart_card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.myCart_DelBtn {
+  border: unset;
+  border-radius: 3rem;
+}
+ .myCart_DelBtn:hover{
+  /* opacity: .3; */
+}
+.myCart_DelBtn:active{
+  background-color: black;
+  /* opacity: none; */
+}
+
+.myCart_pfl {
+  width: 6rem;
+  height:6rem;
+}
+.myCart_image {
+  border-radius: 1rem 1rem;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* start myCartOrder_table */
+div > .myCart_cardDiv > .myCartOrder_table {
+  border-collapse: inherit;
+  border: none;
+  margin: 1rem 0;
+  display: table;
+}
+
+tbody {
+  display: contents;
+  justify-content: start;
+  text-align: start;
+}
+
+.td_productInfo {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 11rem;
+  flex-flow: row;
+  align-items: center;
+}
+.td_productInfo > h4 {
+  align-self: center;
+}
+div > .myCartOrder_table > tbody > tr > td,
+div > .myCartOrder_table > thead > tr > th,
+div > .myCartOrder_table > tbody > tr > th {
+  padding: 0.75rem;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+Table > thead > tr > th,
+Table > tbody > tr > th {
+  background-color: #b3dee5;
+  /* background-color: #fff3e0; */
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+Table > tbody > tr > td,
+Table > tbody > tr:nth-child(odd) {
+  background-color: white;
+  border-bottom: 0.1rem solid #f0f0f0;
+}
+
+div > .table-bordered td,
+.table-bordered th {
+  border: none;
+}
+.formQs_btn {
+  margin: 1.5rem 0;
+}
+
+/* start counter Group  */
+.myCart_CounterGroup {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  border-radius: 1rem;
+  align-items: center;
+  border: unset;
+}
+.myCart_Counter {
+  width: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 2rem;
+  height: 2rem;
+  background: #ff9100;
+}
+.myCart_Counter:active {
+  border: none;
+}
+
+.myCart_Counter:hover,
+.button:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+.myCart_Counter {
+  background: #ffd180;
+  display: inline-flex;
+  justify-content: center;
+
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  border: unset;
+  border-radius: 1rem;
+}
+.myCart_Counter > p {
+  width: inherit;
+  height: inherit;
+  font-size: 2.3rem;
+}
+.myCart_CounterGroup > p {
+  width: inherit;
+  height: inherit;
+  font-size: 2.5rem;
+  margin: 0;
+}
+/* start myCart_formSub */
+.myCart_formSub {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap-reverse;
+}
+
+.myCart_orderInfo,
+.myCart_orderInfo_secondary {
+  width: 100%;
+  max-width: 47.9%;
+  margin: 1rem;
+}
+
+/* start myCart_formSub */
+.formQs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: inherit;
+  height: inherit;
+}
+.formQs_1 {
+  display: inline-flex;
+  justify-content: space-between;
+  width: inherit;
+  flex-direction: row;
+}
+.formQs_2 {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.formQs_span {
+  margin: 0.9rem 0;
+}
+.formQs_SR {
+  display: flex;
+  justify-content: flex-start;
+  width: inherit;
+  flex-direction: column;
+}
+.formQs_3 {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  border-radius: 0.5rem;
+  list-style: none;
+}
+.formQs_3 li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+@media all and (max-width:1075px){
+  .myCart_orderInfo,
+  .myCart_orderInfo_secondary {
+    width: 100%;
+    max-width: unset;
+  }
+
+}
+
+@media all and (max-width: 753px) {
+  .tb_mobile {
+    display: none;
+  }
+  .td_productInfo {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 14rem;
+  }
+  div > .myCart_cardDiv > .myCartOrder_table {
+    border-collapse: collapse;
+  }
+
+  .myCart_CounterGroup > p {
+    width: inherit;
+    height: inherit;
+    font-size: 1.8rem;
+  }
+  td > .myCart_CounterGroup > .myCart_Counter {
+    background: white;
+    width: 2.5rem;
+    height: 2.3rem;
+    border: 0.2rem solid #ff9100;
+  }
+  td > .myCart_CounterGroup > .myCart_Counter > p {
+    width: inherit;
+    height: inherit;
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,121 @@
+.Banner_slider_outta {
+  margin: 8.5rem 0 0 0;
+  height: 50rem;
+  background-image: url(../Banner_top/BannerAsset/OKcover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-width: 37.5rem;
+}
+.BG_Overlay {
+  width: 100%;
+  min-width: 37.5rem;
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.BG_Overlay > p > span {
+  display: block;
+}
+.BG_Overlay > p > span:first-child {
+  font-size: 7rem;
+  font-weight: 900;
+}
+.BG_Overlay > p > span:nth-child(2),
+.BG_Overlay > p > :nth-child(3) {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.banner_btn {
+  display: flex;
+  width: inherit;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Ban_btnE {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  padding: 1rem;
+  border-radius: .5rem;
+  color: #fff;
+  background-color: #31525b;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.btn-float {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+ .btn-float:hover,
+ .btn-float:active,
+ .btn-float:focus {
+  box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.12);
+  font-weight: bold;
+  transform: scale(1.1);
+  color: #ffa101;
+  text-decoration: none;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+@media all and (max-width: 1250px) {
+  .BG_Overlay > p > span:first-child {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  .BG_Overlay > p > span:nth-child(2),
+  .BG_Overlay > p > :nth-child(3) {
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+}
+
+/* /* .Banner_imgItem{
+    display: flex;
+    width: 100%;
+    setting a fixed height for this div allows for flex scaling
+    height: 55rem;
+    height: 100%;
+    background: greenyellow;
+    overflow: hidden;
+}
+.Banner_img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.control-dots{
+    display: flex;
+    justify-content: flex-end;
+}
+@media all and (max-width: 850px){
+    .Banner_imgItem{
+        height: initial;
+        width: auto;
+    }
+    .Banner_img{
+        width: auto;
+        height: initial;
+    }
+} */

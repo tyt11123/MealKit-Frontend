@@ -1,0 +1,48 @@
+.instructionContent__outta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e4e6eb;
+}
+
+.instructionContent__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px 40px;
+}
+.step_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.step_img{
+    width: inherit;
+}
+.step_title {
+  display: inline-flex;
+  border-bottom: 1px solid #e4e6eb;
+  margin-top: 25px;
+}
+.step_title h6 {
+    font-size: 28px;
+    background-color: #113067;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.step_title p{ 
+ font-size: 250%;
+ margin-top: -1px;
+ margin-left: 10px;
+}
+.step_detail p{
+    margin: 10px;
+    font-size: 20px;
+}

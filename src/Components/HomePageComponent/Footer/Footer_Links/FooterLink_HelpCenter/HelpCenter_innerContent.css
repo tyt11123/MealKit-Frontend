@@ -1,0 +1,38 @@
+.innerContent__outta {
+  margin: 140px 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.help_title {
+  height: 250px;
+  width: inherit;
+  background-color: #f36127;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.help_title h1 {
+    text-align: center;
+    margin: 91px 0;
+    font-size: 5.5rem;
+}
+.qa_div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 20px 0 50px 0;
+}
+.qa_div h2 {
+  margin: 20px 0;
+  font-size: 25px;
+  
+}
+@media (max-width: 700px) {
+  .innerContent__outta {
+    margin: 78px 10px;
+  }
+}

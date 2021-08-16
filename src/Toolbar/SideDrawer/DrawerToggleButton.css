@@ -1,0 +1,35 @@
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35px;
+    width: 40px;
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    background: #BEC9DB;
+    opacity: 0.8;
+  }
+  .toggle-button:focus {
+    outline: none;
+  }
+  .toggle-button__line{
+      width: 30px;
+      padding: 2.5px;
+      background: #113067;
+      margin-left: .5rem;
+      border-radius: 5px;
+  }
+  .toggle-button:active, .toggle-button:hover{
+    background-color:  #ff8000;
+    opacity: 0.7;
+  }
+
+  .menuBtn{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 1rem 1rem 1.5rem;
+  }

@@ -1,0 +1,84 @@
+.main-footer {
+  color: #31525b;
+  background: #E7EDF3;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer_inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footerLink {
+  color: #31525b;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+.footerLink:hover {
+  text-decoration: none;
+  color: #f36127;
+}
+.footer_detail_div,
+.footer_detail_div h4 {
+  width: 25rem;
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+}
+.footer_detail,
+.footer_detail > h4 {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  width: 19rem;
+}
+div .list-unstyled > li {
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+.footer_hastag {
+  margin: 1rem 0;
+}
+div > .footer_hastag > h4 {
+  font-size: 3rem;
+  background: white;
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: 800;
+  height: 5rem;
+  color: #1d3124;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+ul > li > .phoneNo {
+  color: #f36127;
+  font-weight: 600;
+}
+.footer_bottom, .footer_bottom > p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+@media all and (max-width:768px){
+  .main-footer {
+    height: 27rem;
+    margin-bottom: 6rem;
+}
+}
+@media all and (max-width:700px){
+  .main-footer {
+    height: auto;
+}
+  .footer_detail_div, .footer_detail {
+    width: 100%;
+    margin: 1.5rem;
+    font-size: 2.5rem;
+}
+}

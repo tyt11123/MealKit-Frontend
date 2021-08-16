@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+.accordion__section{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion{
+    background-color: #fafbfc;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.accordion:hover,
+.accordion_active{
+    background-color:#FAFBFC;
+}
+
+.accordion__title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.accordion__icon{
+    transition: transform 0.6s ease;
+
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.accordion_content_outta{
+    background-color: white;
+    overflow: hidden;
+    transition: max-height .6s ease; 
+}
+
+.accordion__content{
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+@media all and (min-width:375px){
+    .recipeCard_changes {
+        transform: none;
+        transition: none;
+        ;
+      } 
+      
+      .recipeCard_changes:hover {
+        transform: none;
+      }
+}

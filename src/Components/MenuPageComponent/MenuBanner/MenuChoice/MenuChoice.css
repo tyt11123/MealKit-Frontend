@@ -1,0 +1,84 @@
+div .card__style {
+  border: none;
+}
+.card__style {
+  width: 22rem;
+  height: 28rem;
+}
+.card__style .card-header {
+  border-bottom: 0 white;
+  background-color: white;
+}
+.cardTitle_style {
+  margin-top: 2.5rem;
+}
+.cardTitle_style h2 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.img_style {
+  width: 20rem;
+  height: 20rem;
+}
+
+.borderBottom {
+  border-bottom: .3rem solid #113067;
+}
+.borderBottomPlus {
+  border-bottom: .9rem solid #fa923f;
+}
+
+@media (max-width: 879px) {
+  .img_style {
+    width: 18rem;
+    height: 18rem;
+  }
+  .card__style {
+    width: 20rem;
+    height: 26rem;
+  }
+}
+
+@media (max-width: 799px) { 
+  .img_style {
+    width: 15rem;
+    height: 15rem;
+  }
+  .card__style {
+    width: 18rem;
+    height: 23rem;
+  }
+} 
+
+@media (max-width: 719px) { 
+    .img_style {
+        width: 10rem;
+        height: 10rem;
+    }
+    .card__style {
+        width: 12rem;
+        height: 19rem;
+    }
+  } 
+  @media (max-width: 478px) { 
+    .img_style {
+        width: 13rem;
+        height: 13rem;
+    }
+    .card__style {
+        width: 16rem;
+        height: 19rem;
+    }
+    .choiceDisplay ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 39rem;
+  }
+  .borderBottomPlus {
+    border-bottom: .5rem solid #fa923f;
+  }
+  .borderBottom {
+    border-bottom: .3rem solid #113067;
+  }
+  }  

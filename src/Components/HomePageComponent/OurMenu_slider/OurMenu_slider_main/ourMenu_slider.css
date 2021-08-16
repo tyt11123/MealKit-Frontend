@@ -1,0 +1,216 @@
+.ourMenu_outta {
+  margin: 2rem 1rem 0 1rem;
+}
+.ourMenu_content {
+  display: flex;
+  justify-content: center;
+}
+.ourMenu_content > h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  margin: 0;
+  align-items: center;
+  background: #E7EDF3;
+  border-radius: .5rem;
+  color: #ffa101;
+}
+
+.ourMenu_Carousel {
+  margin: 0 3rem;
+}
+div .ourMenu_Carousel > ul {
+  width: 100%;
+  margin: 2rem 0;
+  justify-content: center;
+}
+li .menu_item {
+  border-radius: 1rem;
+  border: 0rem;
+}
+div .ourMenu_Carousel > ul > .ourMenu_itemEach {
+  max-width: 30rem;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+}
+.ourMenu_itemEach::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.38),
+    3px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0;
+  transform: scale(0.75);
+  transition: all 0.2s ease-in-out;
+  will-change: transform;
+  border-radius: 1rem;
+}
+.ourMenu_itemEach:hover {
+  opacity: 1;
+  transform: none;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pfl_ourMenu {
+  height: 35vh;
+}
+.pflimage_ourMenu {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+.pflhover_ourMenu {
+  width:100%;
+  height: 100%;
+
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.pfl_ourMenu:hover .pflimage_ourMenu {
+  opacity: 0.7;
+}
+.pfl_ourMenu:hover:before,
+.pflhover_ourMenu:hover {
+  opacity: 1;
+}
+div .pflhover_ourMenu .pflhover_each_type_btn {
+  color: white;
+  background-color: black;
+  font-size: 4.2rem;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+.card-body {
+  display: none;
+}
+
+.card-body .ourMenu_each_type_btn:hover {
+  color: #31525b;
+  font-weight: 900;
+  /* text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+}
+.ourMenu_each_type_btn {
+  width: 22rem;
+  height: 4rem;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: #31525b;
+  font-weight: 900;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+/* carousel arrow  */
+.react-multiple-carousel__arrow {
+  z-index: 0;
+}
+
+@media all and (max-width: 1290px) {
+  .pfl_ourMenu {
+    height: inherit;
+  }
+  .pflimage_ourMenu {
+    border-radius: 1rem;
+    width: -webkit-fill-available;
+    height: 19rem;
+  }
+
+  .pfl_ourMenu:hover .pflimage_ourMenu {
+    opacity: 0.95;
+  }
+  .pfl_ourMenu:hover .pflhover_ourMenu {
+    opacity: 1;
+  }
+
+  div .ourMenu_Carousel > ul {
+    width: unset;
+  }
+}
+@media all and (min-width: 1024px) {
+  .ourMenu_Carousel > ul > li > .menu_item > .body_ourMenu {
+    display: none;
+  }
+  .ourMenu_Carousel > ul > li > .menu_item > .body_HomeScreen {
+  display: none;
+  
+}
+
+}
+@media all and (max-width:1023px){
+  .pflhover_ourMenu  {
+  
+    display: none;
+  }
+}
+@media all and (max-width: 860px) {
+  .pflimage_ourMenu {
+    border-radius: 1rem;
+    width: -webkit-fill-available;
+    height: 19rem;
+  }
+  .pflhover_ourMenu {
+    display: none;
+  }
+  .ourMenu_Carousel > ul > li > .menu_item > .body_ourMenu {
+    display: flex;
+  }
+}
+@media all and (max-width: 730px) {
+  .pflimage_ourMenu {
+    border-radius: 1rem;
+    width: -webkit-fill-available;
+    height: 20rem;
+  }
+  .ourMenu_content > h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 80%;}
+}
+@media all and (max-width: 560px) {
+  .pflimage_ourMenu {
+    border-radius: 1rem;
+    width: -webkit-fill-available;
+    height: 15rem;
+  }
+}
+@media all and (max-width: 471px) {
+  div .ourMenu_Carousel > ul {
+    width: unset;
+  }
+  .card-body {
+    padding: 0 1rem;
+  }
+  .card-body .ourMenu_each_type_btn {
+    width: 22rem;
+    height: 4rem;
+    font-size: 1.9rem;
+    line-height: 2.2;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+  .pflimage_ourMenu {
+    border-radius: 1rem;
+    width: -webkit-fill-available;
+    height: 12rem;
+  }
+}

@@ -1,0 +1,26 @@
+.detailATag {
+  width: 40rem;
+  height: 6rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .detailATag {
+    width: 45%;
+    height: 5rem;font-size: 2rem;
+  }
+}
+
+@media (max-width: 409px) {
+  .detailATag {
+    width: 45%;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .borderBottom {
+    border-bottom: 0.2rem solid #113067;
+  }
+}

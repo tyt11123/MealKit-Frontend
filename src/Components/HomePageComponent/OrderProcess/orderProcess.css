@@ -1,0 +1,123 @@
+.whyUs__outta {
+  margin: 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont;
+}
+.whyUs__title {
+  text-align: center;
+  margin: 1rem;
+}
+.whyUs__title > h2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.whyUs__heading_main {
+  display: flex;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+  background: #E7EDF3;
+  border-radius: .5rem;
+  color: #ffa101;
+  font-size: 3rem;
+  font-weight: bolder;
+  height: 5rem;
+  text-align: center;
+  align-items: center;
+  font-family: FuturaBT-MediumCondensed;
+}
+.whyUs__heading_sub {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 2.1rem;
+  line-height: 1.5;
+  color: #2f3020;
+  width: 100%;
+  justify-content: center;
+  font-weight: 549;
+}
+
+.whyUs__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.1rem;
+}
+.whyUs-img {
+  width: 17rem;
+}
+.whyUs-img1{
+  width: 15rem;
+}
+.whyUs-img4 {
+  width: 20rem;
+}
+
+.whyus__Ans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+}
+.whyus__Ans p {
+  width: 80%;
+  font-size: 1.8rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+@media all and (max-width: 992px) {
+  div .whyUs__outta > .whyUs__content > .whyus__Ans {
+    padding: 0;
+  }
+}
+@media all and (max-width: 849px) {
+  div .whyUs__outta > .whyUs__content > .whyus__Ans {
+    padding: 0;
+    margin: 0 4rem;
+  }
+}
+@media all and (max-width: 609px) {
+  div .whyUs__outta > .whyUs__content > .whyus__Ans {
+    margin: 0;
+  }
+}
+@media all and (max-width: 450px) {
+  .whyus__Ans {
+    width: 16rem;
+  }
+  .whyUs-img {
+    width: 12rem;
+  }
+  .whyUs-img1 {
+    width: 14rem;
+  }
+  .whyus__Ans p {
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media all and (max-width: 730px) {
+  .whyUs__title > h2 > .whyUs__heading_main {
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 80%;
+  }
+}
+@media all and (max-width: 499px) {
+  .h2__heading_main {
+    padding: 0;
+  }
+  .p__heading-top {
+    display: contents;
+    font-size: 1.9rem;
+  }
+  .whyUs__heading_sub {
+    font-size: 2rem;
+  }
+}

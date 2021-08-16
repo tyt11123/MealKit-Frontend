@@ -1,0 +1,75 @@
+.cutOffTimeDiv__outta {
+  margin: 4rem 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.content {
+  width: 50%;
+}
+.cutOffTimeDiv {
+  text-align: center;
+  margin: 1rem;
+  display: inherit;
+  justify-content: center;
+  flex-direction: column;
+}
+.followUsDiv {
+  text-align: center;
+  margin: 1rem;
+  display: inherit;
+  justify-content: center;
+  flex-direction: column;
+}
+.followUsDiv > social {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+social > a,
+social > button {
+  max-width: 2rem;
+  margin: 0 1rem;
+  color: #31525b;
+}
+social > a:active, social > a:hover{
+  color: #ffa101;
+}
+
+.cutOffTimeDiv__heading_main {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ef6c00;
+  font-weight: bold;
+}
+.cutOffTimeDiv__heading_main >h2{
+  font-size: 3rem;
+    font-weight: bold;
+    color: #31525b;
+    margin: 0;
+}
+.Cutoffdiv_mobileVer {
+  margin: 2rem 0;
+}
+.cutOffTimeDiv__heading_main th,
+.cutOffTimeDiv__heading_main td {
+  border-left-style: groove;
+  border-right-style: groove;
+}
+
+@media all and (max-width: 1039px) {
+  .cutOffTimeDiv_description {
+    margin: 0;
+  }
+}
+@media all and (max-width: 999px) {
+  .cutOffTimeDiv_description {
+    margin: 0 0 4rem 0;
+  }
+}
+@media all and (max-width: 538px) {
+  .cutOffTimeDiv__outta {
+    flex-wrap: wrap;
+  }
+}

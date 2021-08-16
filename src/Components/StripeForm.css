@@ -1,0 +1,61 @@
+/* Variables */
+:root {
+  --gray-offset: rgba(0, 0, 0, 0.03);
+  --gray-border: rgba(0, 0, 0, 0.15);
+  --gray-light: rgba(0, 0, 0, 0.4);
+  --gray-mid: rgba(0, 0, 0, 0.7);
+  --gray-dark: rgba(0, 0, 0, 0.9);
+  --body-color: var(--gray-mid);
+  --headline-color: var(--gray-dark);
+  --accent-color: #0066f0;
+  --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius: 6px;
+  --logo-image: url("https://storage.googleapis.com/stripe-sample-images/KAVHOLM.svg");
+  --form-width: 343px;
+}
+
+.sr-combo-inputs {
+  margin: 20px 0;
+}
+
+.sr-input {
+  font-size: 16px;
+}
+
+.sr-card-element {
+  padding-top: 12px;
+}
+
+.btn-stripe {
+  font-size: 16px;
+  width: 100%;
+  background: var(--accent-color);
+  border-radius: var(--radius);
+  color: white;
+  border: 0;
+  padding: 12px 16px;
+  margin-top: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+.btn-stripe:hover {
+  filter: contrast(115%);
+}
+.btn-stripe:active {
+  transform: translateY(0px) scale(0.98);
+  filter: brightness(0.9);
+}
+.btn-stripe:disabled {
+  opacity: 0.5;
+  cursor: none;
+}
+
+.sr-text {
+  max-width: 825px;
+  margin: 0 auto;
+  font-size: 14px;
+  background: white;
+  color: #6a7c94;
+}

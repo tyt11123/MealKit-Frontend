@@ -1,0 +1,78 @@
+.PayStep2_form__outta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  /* background-color: #f8f8fa; */font-family: "Helvetica";
+}
+
+.reviewCart_div {
+  width: 100%;
+  text-align: center;
+  /* height: 11rem; */
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 2.5rem 0;
+}
+.subTotal_div {
+  width: 100%;
+  text-align: right;
+  /* height: 11rem; */
+  background: white;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  margin: 2.5rem 0;
+}
+.PayStep2_form__inner {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cardDiv_payScreen{
+    width: 100%;
+    max-width: 47.9%;
+    margin: 1rem;
+    font-size: 1.49rem;
+}
+Form > .form-group>.formQs_checkBox> .form-check-label{
+    margin-left: 1rem;
+}
+Form > .form-group > input{
+    font-size: 1.7rem;
+}
+.PayStep2_form__outta > .back-to-result >.pages_path_BackToResult {
+  display: flex;
+  text-align: center;
+    border-radius: 3rem;
+    width: 20rem;
+    height: 5rem;
+}
+div > .formQs_2 > Form > .form-group > select{
+ margin: 0 0 .4rem 0 ;
+}
+.PaidOption{
+  height: 17rem;
+}
+
+@media all and (max-width: 991px){
+  .PayStep2_form__outta {
+    padding: initial;
+}
+}
+
+@media all and (max-width: 950px){
+  .cardDiv_payScreen {
+    margin: initial;
+}
+}
+
+@media all and (max-width: 768px){
+  .cardDiv_payScreen {
+    margin: 1rem;
+    max-width: unset;
+}
+}

@@ -1,0 +1,36 @@
+.ingredient__outta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e4e6eb;
+}
+
+.frestIngre_Img img {
+  width: inherit;
+}
+
+.frestIngre_detail_div {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.frestIngre_detail_div h1 {
+  font-size: 450%;
+  font-family: Georgia, serif;
+}
+.frestIngre_detail_div small {
+  font-style: italic;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 900;
+}
+tbody{
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    padding: 8px;
+    font-size: 150%;
+}
